@@ -64,7 +64,10 @@ int main()
 		//REFRESH
 		SDL_RenderPresent(renderer);
 	}
-
+	
+	TTF_Quit()				//Font cleanup
+	romfsExit();				//romfs cleanup
+	IMG_Quit();				//BG cleanup
 	SDL_Quit();				// SDL cleanup
 	return EXIT_SUCCESS; 	// Clean exit to HBMenu
 	
